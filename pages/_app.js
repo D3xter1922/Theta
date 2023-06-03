@@ -136,7 +136,8 @@ function App() {
   // }, [addEventListener, removeEventListener, handleGetLivestream]);
 
   const handleClick = () => {
-    setIsClicked(true); // Set isClicked to true when the button is clicked
+    setIsClicked(true);
+    ConnectMetamask(); // Set isClicked to true when the button is clicked
   };
   const ConnectMetamask = async () => {
     if (!window.ethereum) {
